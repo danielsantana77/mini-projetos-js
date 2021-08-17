@@ -1,0 +1,205 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 50vh 40vh 30vh 40vh 20vh;
+    grid-template-areas: "header header"
+                          "menu1 menu0"
+                          "section1 section2"
+                          "section3 section3" 
+                          "section4 section4"
+                          "footer footer"     ;
+
+    gap: 2px;
+}
+
+header{
+    background: white;
+    grid-area: header;
+    display: flex;
+ 
+
+}
+header p {
+    margin-left: 100px;
+    color :rgb(214, 0, 13);
+    font-size: 50px;
+}
+
+header nav ul {
+    display: flex;
+    margin-left: 500px;
+    
+}
+
+menu img{
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+}
+
+.item{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+#login{
+
+    background-color:rgb(214, 0, 13);
+    width: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+span{
+    color: black;
+}
+
+.menu1{
+    background: white;
+    grid-area: menu1;
+}
+.menu2{
+    background: white;
+    grid-area: menu0;
+    
+    
+}
+.menu2 button{
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    background-color: rgb(214, 0, 13);
+    border: none;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.menu2 span{
+    font-size: 30px;
+    color: rgb(214, 0, 13);
+}
+.menu2 p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.section1{
+    background: white;
+    grid-area: section1;
+    
+}
+
+.section2{
+    background: white;
+    grid-area: section2;
+
+
+}
+
+.section1 > ul {
+    
+    margin-top: 40px;
+    margin-left: 400px;
+    list-style-image: url(./assets/bolinha-lista-ul.PNG);
+}
+
+.section2 > img{
+    width: 50%;
+    
+}
+.section1 ul li {
+    padding: 5px;
+    height: 50px;
+}
+
+.section3{
+    grid-area: section3;
+  
+    padding: 10px;
+    margin-left: 350px;
+    margin-top: 100px;
+}
+
+.section3 p{
+    font-size: 13pt;
+    font-weight: bold;
+    padding-bottom: 10px;
+    
+}
+
+.section3 input{
+
+    height: 40px;
+    width: 170px;
+    background-color: rgb(226, 219, 219);
+    border: none;
+    border-radius: 10px;
+    padding: 13px;
+
+}
+
+.section3 button{
+
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    width: 170px;
+    background-color: rgb(214, 0, 13);
+    border: none;
+    border-radius: 10px;
+
+
+}
+
+.section4{
+
+    grid-area: section4;
+    
+
+
+}
+
+.section4 img{
+    height: 15%;
+    width: 15%;
+}
+
+.textoImagem{
+    
+   display: flex;
+ 
+    background-color: rgb(226, 219, 219);
+    width: 30%;
+    margin-left: 100px;
+  
+}
+.textoImagem p {
+    width: 200px;
+}
+
+footer{
+    background: black;
+    grid-area: footer;
+}
+
+
