@@ -1,5 +1,5 @@
-var jogador,vendedor = null;
-var x = null
+var jogador,vencedor = null;
+var botao = document.getElementById("botaoReniciar")
 
 var jogadorSelecionado = document.getElementById('jogador-selecionado')
 var vencedorSelecionado = document.getElementById('vencedor-selecionado')
@@ -10,7 +10,13 @@ mudarJogador('X') // Valor que será atribuido ao quadrado clicado
 
 function escolherQuadrado(id){
     
+    if(vencedor !== null){
+        
+        return
+    }
     var quadrado = document.getElementById(id)
+
+   
 
     if(quadrado.innerHTML !== '-'){
         return
@@ -36,6 +42,7 @@ function mudarJogador(valor){
     
     jogador = valor
     jogadorSelecionado.innerHTML = jogador
+    
 }
 
 function checaVencedor(){
@@ -99,6 +106,7 @@ function checaVencedor(){
         return
     }
 
+    
 }
 
 
@@ -113,6 +121,7 @@ function mudarCor(quadrado1,quadrado2,quadrado3){
 function mudarVencedor(quadrado){
     vencedor = quadrado.innerText
     vencedorSelecionado.innerHTML =  vencedor
+    botao.disabled = false
 }
 
 function checaSequencia(quadrado1,quadrado2,quadrado3){
@@ -143,6 +152,7 @@ function reniciarJogo(){
     }
 
     mudarJogador("X")
+    botao.disabled = true
 
 
 }
