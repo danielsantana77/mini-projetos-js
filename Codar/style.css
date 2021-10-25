@@ -16,6 +16,7 @@
     margin-left: 100px;
     color :rgb(214, 0, 13);
     font-size: 50px;
+   
 }
 
 b{
@@ -24,8 +25,8 @@ b{
 
 
 .cabecalho nav ul {
-    display: flex;
-    margin-left: 500px;
+    display: flex;  
+   
     
 }
 
@@ -60,6 +61,8 @@ a{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
     
     
 }
@@ -103,6 +106,10 @@ a{
 
     text-align: left;
 
+}
+
+.lista i{
+    color: #D6000D;
 }
 
 .container-celular{
@@ -149,13 +156,14 @@ a{
 
 .container-opnioes{
     display: flex;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    background-color: rgb(189, 184, 184);
-    
+    background-color: rgb(189, 184, 184);    
     border-radius: 7px;
-    flex-basis: 500px;
+    
 }
+
+
 
 .circulo{
 
@@ -181,6 +189,7 @@ a{
 }
 .nomePessoa{
     font-weight: bold;
+    
 }
 .cargoPessoa{
     font-size: 7pt;
@@ -296,10 +305,36 @@ footer{
     width: 100%;
     text-align: left;
     margin-top: 10px;
+    
 }
 
 .redes-sociais a i{
-    color: white;
+    color: #D6000D;
     text-decoration: none;
     margin-right: 20px;
+  
+    
+}
+
+@media(max-width : 1600px ){
+    .container-opnioes{
+        height: 100%;
+        
+    }
+    .avaliacao{
+        font-size: 8.2pt;
+    }
+    .nomePessoa{
+        font-size: 9.2pt;
+        font-weight: bold;
+    }
+    .cargoPessoa{
+        font-size: 6pt;
+        font-weight: bold;
+    
+    
+    }
+    .texto{
+        padding: 0;
+    }
 }
