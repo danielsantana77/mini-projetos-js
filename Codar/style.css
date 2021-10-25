@@ -14,7 +14,7 @@
 
 .logo {
     margin-left: 100px;
-    color :rgb(214, 0, 13);
+    color :#D6000D;
     font-size: 50px;
    
 }
@@ -35,6 +35,7 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 li{
@@ -163,28 +164,33 @@ a{
     
 }
 
-
+.container-circulo{
+    
+    flex-basis: 20%;
+}
 
 .circulo{
 
-    height: 50px;
-    width: 50px;
+    height: 30%;
+    width: 80%;
     padding: 10px;
     background-color: #D6000D;
-    margin: 10px;
+    margin: 10px ;
     border-radius: 50%;
-    flex-basis: 20%;
+    
 
 }
 
 .texto{
-    margin: 10px;
+    margin: 5px;
     display: flex;
     flex-direction: column;
     text-align: justify;
+    flex-basis: 80%;
     padding: 10px;
 }
 .avaliacao{
+    width: 100%;
     font-size: 9.2pt;
 }
 .nomePessoa{
@@ -232,7 +238,7 @@ a{
 
 #mensagem-destacada{
     color: #D6000D;
-    font-size: 40pt;
+    font-size: 33pt;
     font-weight: bold;
 }
 
