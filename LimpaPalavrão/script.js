@@ -7,11 +7,12 @@ function limparTexto(){
         return
     }
 
-    const regex = /\bporra\b|caraio|merda|poha|puta/gi  //Lista de palavrões 
-    let contadorDePalavroes = 0
-
+    const regex = /\bporra\b|caraio|merda|poha|puta|puto/gi  //Lista de palavrões 
     const texto = document.getElementById('campoTexto').value
     const campoQtdPalavroes = document.getElementById('quantidadePalavroes')
+    
+    let contadorDePalavroes = 0
+
  
     var arrayDePalavras = texto.split(" ")
     
@@ -20,7 +21,7 @@ function limparTexto(){
         if(element != " " && element != "\n"){
             return element
         }
-    }) 
+    }); 
 
     
     arrayDePalavras.forEach((element, index) => {
@@ -29,20 +30,15 @@ function limparTexto(){
            arrayDePalavras[index]=element.replace(regex, "***")
             contadorDePalavroes++
         } 
-
-        
-
     });
 
-    
-  
- 
 
-
-    if(texto == ""){
+    if(texto.length == 0){
         alert("Coloque a sua frase no campo !")
+
     }else if(contadorDePalavroes == 0){
         alert("Sua frase está limpinha !")
+
     }else{
 
         const campoTexto = document.getElementById('campoTexto')
@@ -50,10 +46,15 @@ function limparTexto(){
         campoTexto.style.border = "1px solid #00d48f"
         
     
-        campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrões " + "</strong>" + "foram removidos :)"
+        if(contadorDePalavroes == 1){
+            campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrão " + "</strong>" + "foram removidos :)"
+        }else{
+            campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrões " + "</strong>" + "foram removidos :)"
+        }
+
+        
     
-        const fraseLimpa = document.getElementById('fraseLimpa')
-     
+        const fraseLimpa = document.getElementById('fraseLimpa')     
         fraseLimpa.toggleAttribute('hidden')
 
         
