@@ -47,7 +47,7 @@ function limparTexto(){
         
     
         if(contadorDePalavroes == 1){
-            campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrão " + "</strong>" + "foram removidos :)"
+            campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrão " + "</strong>" + "foi removido :)"
         }else{
             campoQtdPalavroes.innerHTML = "<strong>" + contadorDePalavroes  + " palavrões " + "</strong>" + "foram removidos :)"
         }
