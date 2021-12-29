@@ -1,0 +1,1 @@
+Pequeno projeto feito utilizando Javascript, HTML e CSS , Que tem a função de censurar palavras de baixo calão ou palavrões.
