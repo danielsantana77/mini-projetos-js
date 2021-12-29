@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container-principal{
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    
+    width: 450px; 
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: grey;
+    font-weight: 400;
+
+}
+
+.titulo{
+    color: #556691;
+    font-size: 13pt;
+}
+
+.box-quantidade-palavras{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.box-textArea{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.box-textArea > h4{
+    color: #00d48f;
+}
+#campoTexto{
+    padding: 10px;
+    color: grey;
+    font-size: 12pt;
+    width: 100%;
+    height: 150px;
+    resize: none;
+
+}
+
+#quantidade{
+    color: red;
+    font-weight: bold;
+}
+
+#quantidadePalavroes {
+    color: grey;
+}
+#quantidadePalavroes strong{
+    color: #00d48f;
+    font-weight: bold;
+}
+
+
+#btn-Limpar{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    font-size: 14pt;
+    font-weight: bold;
+    color: #556691;
+
+}

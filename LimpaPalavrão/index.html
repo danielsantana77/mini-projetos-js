@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpa Palavrôes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container-principal">
+        <div class="box">
+            <div class="titulo">
+                <h2>Limpe palavrões de suas frases ;)</h2>
+            </div>
+            
+            <div class="box-textArea">
+                <h4 id="fraseLimpa" hidden>Frase limpinha :) </h4>
+                
+                <div class="">
+                    <textarea name="campoTexto" id="campoTexto" placeholder="Digite ou cole seu texto aqui" cols="40" rows="10" maxlength="255"  onkeyup="contarCaracter(this.value)"></textarea>
+                </div>
+                
+                
+                <div class="box-quantidade-palavras">
+                    <span id="quantidadePalavroes"></span>
+                    <span><label id="quantidade">0</label>/255 caracteres</span>
+                </div>
+            </div>  
+
+            <button id="btn-Limpar" onclick="limparTexto()">Limpar Frase</button>
+
+            <p>Copyright &copy 2021 - Todos os direitos reservados</p>
+            
+        </div>
+        
+    </div>
+    
+   
+</body>
+
+<script src="./script.js" type="text/javascript"></script>
+</html>
