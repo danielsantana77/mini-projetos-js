@@ -43,7 +43,7 @@ function limparTexto(){
 
         const campoTexto = document.getElementById('campoTexto')
         campoTexto.value = arrayDePalavras.join(" ")
-        campoTexto.style.border = "1px solid #00d48f"
+        campoTexto.style.border = "2px solid #00d48f"
         
     
         if(contadorDePalavroes == 1){
